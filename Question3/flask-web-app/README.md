@@ -1,65 +1,57 @@
 1.  Set up the Flask Application
-
-mkdir flask-docker-app
-cd flask-docker-app
+          mkdir flask-docker-app
+          cd flask-docker-app
 
 2. Create a virtual environment:
-
-python3 -m venv venv
-source venv/bin/activate
+          python3 -m venv venv
+          source venv/bin/activate
 
 3. Install Flask
-
-pip install Flask
+          pip install Flask
 
 4. Create a file named app.py and add the following code
-
-from flask import Flask
-
-app = Flask(__name__)
-
-@app.route('/')
-def hello_world():
-    return 'Hello, Docker!'
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080)
+          from flask import Flask
+          
+          app = Flask(__name__)
+          
+          @app.route('/')
+          def hello_world():
+              return 'Hello, Docker!'
+          
+          if __name__ == '__main__':
+              app.run(host='0.0.0.0', port=8080)
 
 5. Create Dockerfile
-
-- Use an official Python runtime as a parent image
-FROM python:3.9-slim
-
-Set the working directory in the container
-WORKDIR /app
-
-#### - Copy the current directory contents into the container at /app
-COPY . /app
-
-#### - Install any needed packages specified in requirements.txt
-RUN pip install --no-cache-dir Flask
-
-#### - Make port 8080 available to the world outside this container
-EXPOSE 8080
-
-#### - Define environment variable
-ENV NAME World
-
-#### - Run app.py when the container launches
-CMD ["python", "app.py"]
+          #### - Use an official Python runtime as a parent image
+          FROM python:3.9-slim
+          
+          #### -Set the working directory in the container
+          WORKDIR /app
+          
+          #### - Copy the current directory contents into the container at /app
+          COPY . /app
+          
+          #### - Install any needed packages specified in requirements.txt
+          RUN pip install --no-cache-dir Flask
+          
+          #### - Make port 8080 available to the world outside this container
+          EXPOSE 8080
+          
+          #### - Define environment variable
+          ENV NAME World
+          
+          #### - Run app.py when the container launches
+          CMD ["python", "app.py"]
 
 
 6. Build the Docker image
-
-docker build -t flask-docker-app .
+          docker build -t flask-docker-app .
 
 7. Run the Docker container
-
-docker run -p 8080:8080 flask-docker-app
+          docker run -p 8080:8080 flask-docker-app
 
 8. Test the Docker container
-http://127.0.0.1:8080
-
+         http://127.0.0.1:8080
 
 
 
