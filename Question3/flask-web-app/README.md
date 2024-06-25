@@ -49,12 +49,15 @@
 
 
 6. Build the Docker image
+
           docker build -t flask-docker-app .
 
 7. Run the Docker container
+
           docker run -p 8080:8080 flask-docker-app
 
 8. Test the Docker container
+
          http://127.0.0.1:8080
 
 
