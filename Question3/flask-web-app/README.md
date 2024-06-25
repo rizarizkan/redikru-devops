@@ -1,15 +1,19 @@
 1.  Set up the Flask Application
+
           mkdir flask-docker-app
           cd flask-docker-app
 
 2. Create a virtual environment:
+
           python3 -m venv venv
           source venv/bin/activate
 
 3. Install Flask
+
           pip install Flask
 
 4. Create a file named app.py and add the following code
+
           from flask import Flask
           
           app = Flask(__name__)
