@@ -65,7 +65,7 @@ http://127.0.0.1:8080
 
 
 
-+++++++++++ MONITORING GRAFANA PROMETHEUS
+# +++++++++++ MONITORING GRAFANA PROMETHEUS +++++++++++++++++++
 
 1. Create a prometheus.yml configuration file
 global:
