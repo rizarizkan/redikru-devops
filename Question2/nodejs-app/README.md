@@ -142,13 +142,9 @@
           heroku create your-heroku-app-name
 
 
-Add a Procfile:
-In your project directory, create a file named Procfile and add the following line:
 
-
-Push the Code to GitHub
+    Push the Code to GitHub
 
           git add .
           git commit -m "Initial commit"
           git push origin main
-
