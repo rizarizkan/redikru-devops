@@ -145,5 +145,6 @@
 
 
 
-7. ![alt text](https://github.com/rizarizkan/redikru-devops/blob/main/Question3/flask-web-app/tampilan-di-Grafana.png)
+7. Dashboard Grafana
+         ![alt text](https://github.com/rizarizkan/redikru-devops/blob/main/Question3/flask-web-app/tampilan-di-Grafana.png)
 
