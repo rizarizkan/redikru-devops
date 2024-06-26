@@ -143,20 +143,7 @@
           docker-compose up -d
 
 
-7. Configure Prometheus as a Data Source in Grafana
-          Open Grafana by navigating to http://localhost:3000.
-          Log in with the default credentials (admin / admin).
-          Add a new data source:
-          Go to Configuration > Data Sources.
-          Click Add data source.
-          Select Prometheus.
-          Set the URL to http://prometheus:9090.
-          Click Save & Test.
-          Step 5: Create a Dashboard in Grafana
-          Create a new dashboard:
-          Click the + icon on the left sidebar.
-          Select Dashboard > Add new panel.
 
 
-8. ![alt text](https://github.com/rizarizkan/redikru-devops/blob/main/Question3/flask-web-app/tampilan-di-Grafana.png)
+7. ![alt text](https://github.com/rizarizkan/redikru-devops/blob/main/Question3/flask-web-app/tampilan-di-Grafana.png)
 
