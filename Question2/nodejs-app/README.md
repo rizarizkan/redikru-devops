@@ -3,11 +3,11 @@
           mkdir nodejs-app
           cd nodejs-app
 
-2. Initialize a new Node.js project
+2. Initialize Nodejs
 
           npm init -y
 
-3. Install Express and other dependencies
+3. Install Express 
 
           npm install express
           npm install --save-dev mocha chai eslint
@@ -127,7 +127,7 @@
                   git push heroku main
 
 9. Set up GitHub Secrets:
-   Go to your GitHub repository settings, navigate to "Secrets and variables" > "Actions", and add the following secrets:
+   Go to your GitHub repository settings, navigate to "Secrets and variables" > "Actions", and add the secrets
 
           HEROKU_EMAIL: Your Heroku account email.
           HEROKU_API_KEY: Your Heroku API key (found in your Heroku account settings).
@@ -140,7 +140,6 @@
     If you haven't already, create a new Heroku app:
 
           heroku create your-heroku-app-name
-
 
 
     Push the Code to GitHub
