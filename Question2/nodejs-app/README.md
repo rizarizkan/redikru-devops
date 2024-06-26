@@ -30,7 +30,7 @@
           module.exports = app;
 
 5. Create a test file:
-Create a directory named test and inside it, create a file named test.js:
+   Create a directory named test and inside it, create a file named test.js:
 
           const chai = require('chai');
           const chaiHttp = require('chai-http');
@@ -53,7 +53,7 @@ Create a directory named test and inside it, create a file named test.js:
 
 
 6. Add ESLint configuration:
-Create a file named .eslintrc.json:
+   Create a file named .eslintrc.json:
 
           {
             "env": {
@@ -69,7 +69,7 @@ Create a file named .eslintrc.json:
           }
 
 7. Update package.json:
-Add scripts for testing and linting:
+   Add scripts for testing and linting:
 
           "scripts": {
             "start": "node app.js",
@@ -79,10 +79,10 @@ Add scripts for testing and linting:
 
 
 8. Set Up GitHub Actions
-Create a GitHub repository for your project and push the code to GitHub.
+   Create a GitHub repository for your project and push the code to GitHub.
 
-Create a GitHub Actions workflow:
-In your project directory, create a directory named .github/workflows and inside it, create a file named ci.yml:
+   Create a GitHub Actions workflow:
+   In your project directory, create a directory named .github/workflows and inside it, create a file named ci.yml:
 
 
           name: Node.js CI
@@ -130,7 +130,7 @@ In your project directory, create a directory named .github/workflows and inside
                   git push heroku main
 
 9. Set up GitHub Secrets:
-Go to your GitHub repository settings, navigate to "Secrets and variables" > "Actions", and add the following secrets:
+   Go to your GitHub repository settings, navigate to "Secrets and variables" > "Actions", and add the following secrets:
 
           HEROKU_EMAIL: Your Heroku account email.
           HEROKU_API_KEY: Your Heroku API key (found in your Heroku account settings).
@@ -139,8 +139,8 @@ Go to your GitHub repository settings, navigate to "Secrets and variables" > "Ac
 
 10. Deploy to Heroku
 
-Create a Heroku app:
-If you haven't already, create a new Heroku app:
+    Create a Heroku app:
+    If you haven't already, create a new Heroku app:
 
           heroku create your-heroku-app-name
 
