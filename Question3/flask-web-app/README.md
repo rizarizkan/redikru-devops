@@ -110,7 +110,7 @@
               app.run(host='0.0.0.0', port=8080)
           
           
-          5. Set Up Grafana
+5. Set Up Grafana
           Create a docker-compose.yml file
           
           version: '3'
@@ -141,8 +141,6 @@
 
 6. Run the Docker Compose:
           docker-compose up -d
-
-
 
 
 7. Dashboard Grafana
