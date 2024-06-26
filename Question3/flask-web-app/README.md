@@ -157,3 +157,6 @@
           Click the + icon on the left sidebar.
           Select Dashboard > Add new panel.
 
+
+8. ![alt text](https://github.com/rizarizkan/redikru-devops/blob/main/Question3/flask-web-app/tampilan-di-Grafana.png)
+
