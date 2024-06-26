@@ -29,8 +29,7 @@
           
           module.exports = app;
 
-5. Create a test file:
-   Create a directory named test and inside it, create a file named test.js:
+5. Create a directory named test and inside it, create a file named test.js:
 
           const chai = require('chai');
           const chaiHttp = require('chai-http');
@@ -52,8 +51,7 @@
           });
 
 
-6. Add ESLint configuration:
-   Create a file named .eslintrc.json:
+6. Create a file named .eslintrc.json:
 
           {
             "env": {
@@ -78,8 +76,7 @@
           }
 
 
-8. Set Up GitHub Actions
-   Create a GitHub repository for your project and push the code to GitHub.
+8. Create a GitHub repository for your project and push the code to GitHub.
 
    Create a GitHub Actions workflow:
    In your project directory, create a directory named .github/workflows and inside it, create a file named ci.yml:
